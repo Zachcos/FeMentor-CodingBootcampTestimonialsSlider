@@ -1,5 +1,22 @@
 @import "reset";
 
 /* Start variables and mixins */
-
+$darkBlue: hsl(240, 38%, 20%);
+$grayishBlue: hsl(240, 18%, 77%);
+@mixin font_light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+@mixin font_med {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+@mixin font_bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
 /* End variables and mixins */
+
+html {
+  font-size: 32px;
+}
