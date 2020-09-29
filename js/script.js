@@ -1,9 +1,9 @@
 const nextBtn = function() {
-  document.querySelector(".image-slide").classList.add('l540')
-  document.querySelector(".testimonial-slide").classList.add('t280')
+  document.querySelector(".image-slide").classList.add('image-swap')
+  document.querySelector(".testimonial-slide").classList.add('testimonial-swap')
 }
 
 const prevBtn = function() {
-  document.querySelector(".image-slide").classList.remove('l540')
-  document.querySelector(".testimonial-slide").classList.remove('t280')
+  document.querySelector(".image-slide").classList.remove('image-swap')
+  document.querySelector(".testimonial-slide").classList.remove('testimonial-swap')
 }

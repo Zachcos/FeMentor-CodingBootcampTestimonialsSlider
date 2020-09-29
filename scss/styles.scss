@@ -44,8 +44,8 @@ body {
     position: relative;
     top: 0;
     transition: all 0.4s ease-in-out;
-    &.t280 {
-      top: -280px;
+    &.testimonial-swap {
+      top: -283px;
     }
     .testimonial-1,
     .testimonial-2 {
@@ -96,7 +96,7 @@ body {
     left: 0;
     width: 1000px;
     transition: all 0.4s ease-in-out;
-    &.l540 {
+    &.image-swap {
       left: -540px;
     }
   }
