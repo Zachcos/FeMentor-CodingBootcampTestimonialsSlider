@@ -40,27 +40,35 @@ body {
   position: relative;
   width: 45%;
   z-index: 100;
-  .testimonial-1,
-  .testimonial-2 {
-    height: 100%;
-    width: 100%;
-    .quote {
-      @include font_light;
-      color: $darkBlue;
+  .testimonial-slide {
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+    &.t280 {
+      top: -280px;
     }
-    .name,
-    .role {
-      display: inline-block;
-      font-size: 0.65rem;
-    }
-    .name {
-      @include font_bold;
-      color: $darkBlue;
-      margin-top: 15px;
-    }
-    .role {
-      @include font_med;
-      color: $grayishBlue;
+    .testimonial-1,
+    .testimonial-2 {
+      height: 100%;
+      width: 100%;
+      .quote {
+        @include font_light;
+        color: $darkBlue;
+      }
+      .name,
+      .role {
+        display: inline-block;
+        font-size: 0.65rem;
+      }
+      .name {
+        @include font_bold;
+        color: $darkBlue;
+        margin-top: 15px;
+      }
+      .role {
+        @include font_med;
+        color: $grayishBlue;
+      }
     }
   }
 }
@@ -87,20 +95,31 @@ body {
     position: relative;
     left: 0;
     width: 1000px;
+    transition: all 0.4s ease-in-out;
+    &.l540 {
+      left: -540px;
+    }
   }
 }
 .image-controls {
+  align-items: center;
   background: white;
   border-radius: 40px;
+  bottom: -28px;
   -webkit-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
   -moz-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
   box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
   display: flex;
-  align-items: center;
+  height: 56px;
   justify-content: space-around;
+  left: 60px;
   position: absolute;
   width: 112px;
-  height: 56px;
-  bottom: -28px;
-  left: 60px;
+  & div {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
 }
