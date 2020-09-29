@@ -141,4 +141,96 @@ html {
   font-size: 32px;
 }
 
+body {
+  align-items: center;
+  background: url("../images/pattern-curve.svg") no-repeat 0 100%, url("../images/pattern-bg.svg") no-repeat 90% 50%, url("../images/pattern-quotes.svg") no-repeat 20% 30%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonial-wrapper {
+  height: 275px;
+  left: 75px;
+  line-height: 1.4rem;
+  overflow: hidden;
+  position: relative;
+  width: 45%;
+  z-index: 100;
+}
+.testimonial-wrapper .testimonial-1,
+.testimonial-wrapper .testimonial-2 {
+  height: 100%;
+  width: 100%;
+}
+.testimonial-wrapper .testimonial-1 .quote,
+.testimonial-wrapper .testimonial-2 .quote {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: #202046;
+}
+.testimonial-wrapper .testimonial-1 .name,
+.testimonial-wrapper .testimonial-1 .role,
+.testimonial-wrapper .testimonial-2 .name,
+.testimonial-wrapper .testimonial-2 .role {
+  display: inline-block;
+  font-size: 0.65rem;
+}
+.testimonial-wrapper .testimonial-1 .name,
+.testimonial-wrapper .testimonial-2 .name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #202046;
+  margin-top: 15px;
+}
+.testimonial-wrapper .testimonial-1 .role,
+.testimonial-wrapper .testimonial-2 .role {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #babacf;
+}
+
+.image-wrapper {
+  -webkit-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  -moz-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  max-width: 500px;
+  position: relative;
+}
+
+.image-frame {
+  height: 540px;
+  overflow: hidden;
+  width: 540px;
+}
+.image-frame .image-1,
+.image-frame .image-2 {
+  height: 100%;
+  width: 100%;
+}
+.image-frame .image-slide {
+  display: flex;
+  height: 100%;
+  position: relative;
+  left: 0;
+  width: 1000px;
+}
+
+.image-controls {
+  background: white;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  -moz-box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  box-shadow: 0px 10px 35px -10px rgba(32, 32, 70, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 112px;
+  height: 56px;
+  bottom: -28px;
+  left: 60px;
+}
+
 /*# sourceMappingURL=styles.css.map */
