@@ -254,13 +254,35 @@ body {
 
 @media screen and (max-width: 500px) {
   body {
+    background: url("../images/pattern-bg.svg") no-repeat 0 27%, url("../images/pattern-quotes.svg") no-repeat 50% 70%, url("../images/pattern-curve.svg") no-repeat 0 100%;
+    background-size: contain, 20%, contain;
     flex-direction: column;
-    height: 100%;
   }
 
   .testimonial-wrapper {
-    visibility: hidden;
     order: 2;
+    width: 90%;
+    left: 0;
+    font-size: 0.5rem;
+    line-height: 0.9rem;
+    margin-top: 140px;
+    height: 210px;
+  }
+  .testimonial-wrapper .testimonial-slide.testimonial-swap {
+    top: -210px;
+  }
+  .testimonial-wrapper .testimonial-slide .testimonial-1 .name,
+.testimonial-wrapper .testimonial-slide .testimonial-1 .role,
+.testimonial-wrapper .testimonial-slide .testimonial-2 .name,
+.testimonial-wrapper .testimonial-slide .testimonial-2 .role {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.45rem;
+  }
+  .testimonial-wrapper .testimonial-slide .testimonial-1 .role,
+.testimonial-wrapper .testimonial-slide .testimonial-2 .role {
+    margin-top: -10px;
   }
 
   .image-wrapper {

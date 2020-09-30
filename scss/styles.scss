@@ -126,14 +126,39 @@ body {
 
 @media screen and (max-width: 500px) {
   body {
-    //TODO background image styles
+    background: url("../images/pattern-bg.svg") no-repeat (0 27%),
+      url("../images/pattern-quotes.svg") no-repeat (50% 70%),
+      url("../images/pattern-curve.svg") no-repeat (0 100%);
+    background-size: contain, 20%, contain;
     flex-direction: column;
-    height: 100%;
   }
 
   .testimonial-wrapper {
-    visibility: hidden;
     order: 2;
+    width: 90%;
+    left: 0;
+    font-size: 0.5rem;
+    line-height: 0.9rem;
+    margin-top: 140px;
+    height: 210px;
+    .testimonial-slide {
+      &.testimonial-swap {
+        top: -210px;
+      }
+      .testimonial-1,
+      .testimonial-2 {
+        .name,
+        .role {
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 0.45rem;
+        }
+        .role {
+          margin-top: -10px;
+        }
+      }
+    }
   }
 
   .image-wrapper {
